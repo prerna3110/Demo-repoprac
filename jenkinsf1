@@ -1,0 +1,17 @@
+pipeline {
+    agent{
+	node{
+	label 'built-in'
+	customWorkspace '/mnt/custom-prerna'
+}
+}
+
+    stages {
+        stage('new_folder') {
+            steps 
+			{
+                sh 'mkdir Prerna3110'
+            }
+        }
+        }
+		}
